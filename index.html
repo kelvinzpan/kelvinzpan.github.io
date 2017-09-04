@@ -31,7 +31,7 @@
 		<!-- Navbar logo -->
 		<a class="navbar-brand" href="#" id="logoBox">
 			<div id="logo">
-            	<p>m a d e b y <b>z i</b></p>
+            	<p>madeby<b>zi</b></p>
         	</div>
 		</a>
 
@@ -39,26 +39,26 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
     		<ul class="navbar-nav ml-auto">
       			<li class="nav-item" id="navItem">
-        			<a class="nav-link" href="#about" id="navAbout" onmouseover="bgAbout()" onmouseout="bgDefault()">
+        			<a class="nav-link" href="#about" id="navAbout" onmouseover="showDiv('imgAbout', 0.1)"" onmouseleave="hideDiv('imgAbout')">
         				<p>about</p>
         			</a>
       			</li>
       			<li class="nav-item" id="navItem">
-        			<a class="nav-link" href="#code" id="navCode" onmouseover="bgCode()" onmouseout="bgDefault()">
+        			<a class="nav-link" href="#code" id="navCode" onmouseover="showDiv('imgCode', 0.1)"" onmouseleave="hideDiv('imgCode')">
         				<p>code</p>
         			</a>
       			</li>
       			<li class="nav-item" id="navItem">
-        			<a class="nav-link" href="#art" id="navArt" onmouseover="bgArt()" onmouseout="bgDefault()">
+        			<a class="nav-link" href="#art" id="navArt" onmouseover="showDiv('imgArt', 0.1)"" onmouseleave="hideDiv('imgArt')">
         				<p>art</p>
         			</a>
       			</li>
       			<li class="nav-item" id="navItem">
-        			<a class="nav-link" href="#contact" id="navContact" onmouseover="bgContact()" onmouseout="bgDefault()">
+        			<a class="nav-link" href="#contact" id="navContact" onmouseover="showDiv('imgContact', 0.1)"" onmouseleave="hideDiv('imgContact')">
         				<p>contact</p>
         			</a>
       			</li>
-                <li class="nav-item" id="navItem" onmouseover="bgStore()" onmouseout="bgDefault()">
+                <li class="nav-item" id="navItem" onmouseover="showDiv('imgStore', 0.1)"" onmouseleave="hideDiv('imgStore')">
                     <a class="nav-link" id="navStore"><!-- text in css --></a>
                 </li>
     		</ul>
@@ -68,7 +68,7 @@
 
 	<!-- Background div -->
 	<div id="welcome">
-        <h1><b>hello</b> world,</h1>
+        <h1><b>thank you</b> for visiting!</h1>
         <h2>I am Kelvin Pan.</h2>   
     </div>
 
@@ -175,18 +175,27 @@
 		</div>
         <div class="row" id="gallery">
             <div class="col-md-4">
-                <div class="art-box shadow">
+                <div class="art-box shadow" id="skywardImg" onmouseover="showDiv('skyward', 1)" onmouseleave="hideDiv('skyward')">
                     <div class="overlay"></div>
+                    <div class="art-box-text" id="skyward">
+                        <h3>skyward</h3>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="art-box shadow">
+                <div class="art-box shadow" id="kannaImg" onmouseover="showDiv('kanna', 1)" onmouseleave="hideDiv('kanna')">
                     <div class="overlay"></div>
+                    <div class="art-box-text" id="kanna">
+                        <h3>kanna</h3>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="art-box shadow">
+                <div class="art-box shadow" id="kanekireImg" onmouseover="showDiv('kanekire', 1)" onmouseleave="hideDiv('kanekire')">
                     <div class="overlay"></div>
+                    <div class="art-box-text" id="kanekire">
+                        <h3>kaneki :re</h3>
+                    </div>
                 </div>
             </div>
         </div>

@@ -26,6 +26,7 @@ body {
   border: 0rem;
   line-height: 5rem;
   font-size: 2.2rem;
+  letter-spacing: 0.7rem;
   font-family: 'Open Sans', sans-serif;
   color: #252525;
   font-weight: 300;
@@ -146,7 +147,7 @@ body {
   #welcome h1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 4rem;
-    letter-spacing: 1rem;
+    letter-spacing: 0.7rem;
     text-align: center;
     background: linear-gradient(145deg, #FFF6B7, #F6416C);
     -webkit-background-clip: text;
@@ -297,8 +298,50 @@ body {
 .art-box {
   background-color: #333333;
   width: 100%;
-  padding-top: 100%;
-  margin-top: 1.5rem; }
+  padding-bottom: 100%;
+  margin-top: 1.5rem;
+  position: relative; }
+  .art-box .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: all 0.5s ease-in-out; }
+    .art-box .overlay:hover {
+      opacity: 1; }
+  .art-box .art-box-text {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5em;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    text-overflow: ellipsis;
+    justify-content: center;
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out; }
+    .art-box .art-box-text h3 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      font-size: 1.8rem;
+      text-align: center;
+      letter-spacing: 0rem;
+      color: #F9898A; }
+
+#skywardImg {
+  background: url("../img/art/skyward.jpg") no-repeat center;
+  background-size: cover; }
+
+#kannaImg {
+  background: url("../img/art/kanna.jpg") no-repeat center;
+  background-size: cover; }
+
+#kanekireImg {
+  background: url("../img/art/tgre.jpg") no-repeat center;
+  background-size: cover; }
 
 #rowContactHeader {
   color: #F7657B; }
