@@ -23,6 +23,7 @@
 
 	<!-- Bootstrap Navbar -->
 	<nav class="navbar fixed-top navbar-toggleable-sm navbar-light" id="topNav">
+        <div class="container">
 		<!-- Toggle button when md screen size -->
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="navHamMenu">
 			<span class="navbar-toggler-icon"></span>
@@ -38,36 +39,52 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
     		<ul class="navbar-nav ml-auto">
       			<li class="nav-item" id="navItem">
-        			<a class="nav-link" href="#about" id="navAbout" onclick="navAboutActive()">
+        			<a class="nav-link" href="#about" id="navAbout" onmouseover="bgAbout()" onmouseout="bgDefault()">
         				<p>about</p>
         			</a>
       			</li>
       			<li class="nav-item" id="navItem">
-        			<a class="nav-link" href="#code" id="navCode" onclick="navCodeActive()">
+        			<a class="nav-link" href="#code" id="navCode" onmouseover="bgCode()" onmouseout="bgDefault()">
         				<p>code</p>
         			</a>
       			</li>
       			<li class="nav-item" id="navItem">
-        			<a class="nav-link" href="#art" id="navArt" onclick="navArtActive()">
+        			<a class="nav-link" href="#art" id="navArt" onmouseover="bgArt()" onmouseout="bgDefault()">
         				<p>art</p>
         			</a>
       			</li>
       			<li class="nav-item" id="navItem">
-        			<a class="nav-link" href="#contact" id="navContact" onclick="navContactActive()">
+        			<a class="nav-link" href="#contact" id="navContact" onmouseover="bgContact()" onmouseout="bgDefault()">
         				<p>contact</p>
         			</a>
       			</li>
+                <li class="nav-item" id="navItem" onmouseover="bgStore()" onmouseout="bgDefault()">
+                    <a class="nav-link" id="navStore"><!-- text in css --></a>
+                </li>
     		</ul>
 		</div>
+        </div>
 	</nav>
 
 	<!-- Background div -->
-	<div id="welcome">Hello.</div>
+	<div id="welcome">
+        <h1><b>hello</b> world,</h1>
+        <h2>I am Kelvin Pan.</h2>   
+    </div>
+
+    <!-- Main banner background images -->
+    <div class="banner-img" id="imgMain" style="visibility: hidden;"></div>
+    <div class="banner-img" id="imgAbout" style="visibility: hidden;"></div>
+    <div class="banner-img" id="imgCode" style="visibility: hidden;"></div>
+    <div class="banner-img" id="imgArt" style="visibility: hidden;"></div>
+    <div class="banner-img" id="imgContact" style="visibility: hidden;"></div>
+    <div class="banner-img" id="imgStore" style="visibility: hidden;"></div>
 
 	<!-- About section -->
 	<div class="container main-content" id="about">
 		<div class="row" id="rowAboutHeader">
 			<div class="col-md-12">
+                <div class="title-spacing"></div>
 				<h3><b>about</b> me</h3>
 			</div>
 		</div>
@@ -96,35 +113,120 @@
 	<div class="container main-content" id="code">
 		<div class="row" id="rowCodeHeader">
 			<div class="col-md-12">
+                <div class="title-spacing"></div>
 				<h3><b>coding</b> projects</h3>
 			</div>
 		</div>
 		<div class="row" id="rowCodeLine"></div>
 		<div class="row" id="rowCode">
-            <div class="col-md-6 code-box" id="code-pweb">
-                <div class="code-pic" id="code-pweb-pic">
+            <div class="col-md-12 code-box" id="code-pweb">
+                <div class="code-pic shadow" id="code-pweb-pic">
                 </div>
                 <div class="code-txt">
-                    <h3>Personal Website</h3>
+                    <h3><b>madebyzi</b>, a personal website</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <div class="code-req-list">
                         <div class="code-req">HTML5</div>
                         <div class="code-req">CSS3</div>
-                        <div class="code-req">JAVASCRIPT</div>
-                        <div class="code-req">BOOTSTRAP</div>
+                        <div class="code-req">JavaScript</div>
+                        <div class="code-req">Bootstrap</div>
                         <div class="code-req">SASS</div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 code-box" id="code-2">
-                <div class="code-pic" id="code-2-pic">
+            <div class="col-md-12 code-box" id="code-flyr">
+                <div class="code-pic shadow" id="code-flyr-pic">
                 </div>
                 <div class="code-txt">
-                    <p>Coming soon...</p>
+                    <h3><b>flyr</b>, an android app</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="code-req-list">
+                        <div class="code-req">Scrum</div>
+                        <div class="code-req">Program Management</div>
+                        <div class="code-req">Prototyping</div>
+                        <div class="code-req">Design</div>
+                        <div class="code-req">Documentation</div>
+                    </div>
                 </div>
             </div>
 		</div>
-	</div>	
+	</div>
+
+	<!-- Art section -->
+	<div class="container main-content" id="art">
+		<div class="row" id="rowArtHeader">
+			<div class="col-md-12">
+                <div class="title-spacing"></div>
+				<h3><b>art</b> projects</h3>
+			</div>
+		</div>
+		<div class="row" id="rowArtLine"></div>
+		<div class="row" id="rowArt">
+            <div class="col-md-8">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <!-- Left side is smaller column -->
+            <div class="col-md-4" style="text-align: right;">
+                <h4>instagram:</h4>
+                <a href="https://www.instagram.com/_kelvinpan/"><p>@_kelvinpan</p></a>
+                <h4>artstation:</h4>
+                <p>Coming soon...</p>
+            </div>
+		</div>
+        <div class="row" id="gallery">
+            <div class="col-md-4">
+                <div class="art-box shadow">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="art-box shadow">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="art-box shadow">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </div>
+	</div>
+
+	<!-- Contact section -->
+	<div class="container main-content" id="contact">
+		<div class="row" id="rowContactHeader">
+			<div class="col-md-12">
+                <div class="title-spacing"></div>
+				<h3><b>contact</b> me</h3>
+			</div>
+		</div>
+		<div class="row" id="rowContactLine"></div>
+		<div class="row" id="rowContact">
+            <div class="col-md-8">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <!-- Left side is smaller column -->
+            <div class="col-md-4" style="text-align: right;">
+                <h4>linkedin:</h4>
+                <a href="https://www.linkedin.com/in/zlpan/"><p>zlpan</p></a>
+                <h4>github:</h4>
+                <a href="https://github.com/kelvinzpan"><p>kelvinzpan</p></a>
+                <h4>triton gaming:</h4>
+                <a href="https://www.facebook.com/tritonesports"><p>Facebook Page</p></a>
+            </div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<div class="jumbotron-fluid" id="jumboFooter">
+		<div class="container">
+			<div class="row" id="rowFooter">
+				<div class="col-md-12">
+					 <h3>© Kelvin Pan</h3>
+				</div>
+			</div>
+		</div>
+	</div>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>

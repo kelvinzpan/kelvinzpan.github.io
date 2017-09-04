@@ -10,69 +10,56 @@ let grad4 = '#F9898A';
 let grad5 = '#F7657B';
 let grad6 = '#F6416C';
 
-// Lazy approach to keeping menu colors
-// CHANGE TO WHEN SCROLLING PAST ANCHORS
-// function navAboutActive()
-// {
-//     let about = document.getElementById('navAbout');
-//     let code = document.getElementById('navCode');
-//     let art = document.getElementById('navArt');
-//     let contact = document.getElementById('navContact');
+// When user hovers a menu item, front background changes
+let imgMain = document.getElementById('imgMain');
+let imgAbout = document.getElementById('imgAbout');
+let imgCode = document.getElementById('imgCode');
+let imgArt = document.getElementById('imgArt');
+let imgContact = document.getElementById('imgContact');
+let imgStore = document.getElementById('imgStore');
 
-//     about.style.background = grad2;
-//     about.style.color = primary_dark;
-//     code.style.background = secondary_dark;
-//     code.style.color = primary_light;
-//     art.style.background = secondary_dark;
-//     art.style.color = primary_light;
-//     contact.style.background = secondary_dark;
-//     contact.style.color = primary_light;
-// }
-// function navCodeActive()
-// {
-//     let about = document.getElementById('navAbout');
-//     let code = document.getElementById('navCode');
-//     let art = document.getElementById('navArt');
-//     let contact = document.getElementById('navContact');
+function bgMain() {
+	imgMain.style.height = $(window).height();
+	imgMain.style.visibility = 'visible';
+    imgMain.style.opacity = '.1';
+}
+function bgAbout() {
+	imgAbout.style.height = $(window).height();
+	imgAbout.style.visibility = 'visible';
+    imgAbout.style.opacity = '.1';
+} 
+function bgCode() {
+	imgCode.style.height = $(window).height();
+	imgCode.style.visibility = 'visible';
+    imgCode.style.opacity = '.1';
+}
+function bgArt() {
+	imgArt.style.height = $(window).height();
+	imgArt.style.visibility = 'visible';
+    imgArt.style.opacity = '.1';
+}
+function bgContact() {
+	imgContact.style.height = $(window).height();
+	imgContact.style.visibility = 'visible';
+    imgContact.style.opacity = '.1';
+}
+function bgStore() {
+	imgStore.style.height = $(window).height();
+	imgStore.style.visibility = 'visible';
+	imgStore.style.opacity = '.1';
+}
 
-//     about.style.background = secondary_dark;
-//     about.style.color = primary_light;
-//     code.style.background = grad3;
-//     code.style.color = primary_dark;
-//     art.style.background = secondary_dark;
-//     art.style.color = primary_light;
-//     contact.style.background = secondary_dark;
-//     contact.style.color = primary_light;
-// }
-// function navArtActive()
-// {
-//     let about = document.getElementById('navAbout');
-//     let code = document.getElementById('navCode');
-//     let art = document.getElementById('navArt');
-//     let contact = document.getElementById('navContact');
-
-//     about.style.background = secondary_dark;
-//     about.style.color = primary_light;
-//     code.style.background = secondary_dark;
-//     code.style.color = primary_light;
-//     art.style.background = grad4;
-//     art.style.color = primary_dark;
-//     contact.style.background = secondary_dark;
-//     contact.style.color = primary_light;
-// }
-// function navContactActive()
-// {
-//     let about = document.getElementById('navAbout');
-//     let code = document.getElementById('navCode');
-//     let art = document.getElementById('navArt');
-//     let contact = document.getElementById('navContact');
-
-//     about.style.background = secondary_dark;
-//     about.style.color = primary_light;
-//     code.style.background = secondary_dark;
-//     code.style.color = primary_light;
-//     art.style.background = secondary_dark;
-//     art.style.color = primary_light;
-//     contact.style.background = grad5;
-//     contact.style.color = primary_dark;
-// }
+function bgDefault() {
+	imgMain.style.visibility = 'hidden';
+    imgMain.style.opacity = '0';
+    imgAbout.style.visibility = 'hidden';
+    imgAbout.style.opacity = '0';
+    imgCode.style.visibility = 'hidden';
+    imgCode.style.opacity = '0';
+    imgArt.style.visibility = 'hidden';
+    imgArt.style.opacity = '0';
+    imgContact.style.visibility = 'hidden';
+    imgContact.style.opacity = '0';
+    imgStore.style.visibility = 'hidden';
+    imgStore.style.opacity = '0';
+}
