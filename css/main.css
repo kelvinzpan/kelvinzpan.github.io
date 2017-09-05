@@ -42,8 +42,8 @@ body {
 @keyframes gradient {
   50% {
     background-position: 100% 0; } }
-#navbarSupportedContent {
-  background: #333333; }
+#menuoptions {
+  border: solid 0.1rem #333333; }
 
 #navAbout, #navCode, #navArt, #navContact, #navStore {
   height: 5rem;
@@ -51,7 +51,7 @@ body {
   padding: 0rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  background-color: #333333;
+  background-color: #252525;
   line-height: 5rem;
   font-family: 'Open Sans', sans-serif;
   color: #ffffff;
@@ -111,7 +111,12 @@ body {
   z-index: -1; }
 
 #imgAbout {
-  z-index: -2; }
+  z-index: -2;
+  background: url("../img/img_me.png") no-repeat center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain; }
 
 #imgCode {
   z-index: -3;
@@ -130,7 +135,12 @@ body {
   background-size: contain; }
 
 #imgContact {
-  z-index: -5; }
+  z-index: -5;
+  background: url("../img/img_question.png") no-repeat center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain; }
 
 #imgStore {
   z-index: -6; }
@@ -197,11 +207,29 @@ body {
       text-decoration: none;
       color: #FFF6B7; }
 
-.shadow {
-  box-shadow: inset 0rem 0rem 15vw 0.4rem #101010;
-  -webkit-box-shadow: inset 0rem 0rem 15vw 0.4rem #101010;
-  -moz-box-shadow: inset 0rem 0rem 15vw 0.4rem #101010;
-  -o-box-shadow: inset 0rem 0rem 15vw 0.4rem #101010; }
+.code-pic.shadow {
+  box-shadow: inset 0rem 0rem 5vw 1vw #202020;
+  -webkit-box-shadow: inset 0rem 0rem 5vw 1vw #202020;
+  -moz-box-shadow: inset 0rem 0rem 5vw 1vw #202020;
+  -o-box-shadow: inset 0rem 0rem 5vw 1vw #202020; }
+
+.art-box.shadow {
+  box-shadow: inset 0rem 0rem 8vw 1vw #202020;
+  -webkit-box-shadow: inset 0rem 0rem 8vw 1vw #202020;
+  -moz-box-shadow: inset 0rem 0rem 8vw 1vw #202020;
+  -o-box-shadow: inset 0rem 0rem 8vw 1vw #202020; }
+
+#menuoptions.shadow {
+  box-shadow: 0px 0px 4rem 1rem #252525;
+  -webkit-box-shadow: 0px 0px 4rem 1rem #252525;
+  -moz-box-shadow: 0px 0px 4rem 1rem #252525;
+  -o-box-shadow: 0px 0px 4rem 1rem #252525; }
+
+#logoBox.shadow {
+  box-shadow: 0px 0px 4rem 1rem #252525;
+  -webkit-box-shadow: 0px 0px 4rem 1rem #252525;
+  -moz-box-shadow: 0px 0px 4rem 1rem #252525;
+  -o-box-shadow: 0px 0px 4rem 1rem #252525; }
 
 .title-spacing {
   height: 6.5rem; }
@@ -280,7 +308,11 @@ body {
   font-size: 1.6rem; }
 
 #code-pweb-pic {
-  background: url("../img/img_pr_website.png") no-repeat center;
+  background: url("../img/code/pweb.jpg") no-repeat center;
+  background-size: cover; }
+
+#code-flyr-pic {
+  background: url("../img/code/flyr.jpg") no-repeat center;
   background-size: cover; }
 
 #rowArtHeader {
@@ -305,20 +337,21 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     opacity: 0;
     transition: all 0.5s ease-in-out; }
     .art-box .overlay:hover {
       opacity: 1; }
   .art-box .art-box-text {
     position: absolute;
-    top: 50%;
+    top: 45%;
     margin-top: -0.5em;
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
     text-overflow: ellipsis;
     justify-content: center;
+    align-items: center;
     pointer-events: none;
     visibility: hidden;
     opacity: 0;
@@ -330,6 +363,14 @@ body {
       text-align: center;
       letter-spacing: 0rem;
       color: #F9898A; }
+    .art-box .art-box-text p {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      font-size: 1.6rem;
+      text-align: center;
+      letter-spacing: 0rem;
+      line-height: 4rem;
+      color: #ffffff; }
 
 #skywardImg {
   background: url("../img/art/skyward.jpg") no-repeat center;
@@ -353,6 +394,11 @@ body {
   margin-bottom: 3rem; }
 
 #rowContact h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  letter-spacing: normal;
+  text-align: right;
   color: #F7657B; }
 
 #jumboFooter {

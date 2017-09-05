@@ -1,8 +1,8 @@
 $primary-dark: #252525;
 $secondary-dark: #333333;
 $primary-light: #ffffff;
-$shadow-color: #101010;
-
+$shadow-color: #202020;
+$menu-shadow-color: #252525;
 $grad1: #FFF6B7;
 $grad2: #FDD1A8;
 $grad3: #FBAD99;
@@ -74,7 +74,10 @@ body {
 }
 
 #navbarSupportedContent {
-    background: $secondary-dark;
+    //background: $secondary-dark;
+}
+#menuoptions {
+    border: solid 0.1rem $secondary-dark;
 }
 #navAbout, #navCode, #navArt, #navContact, #navStore {
     height: 5rem;
@@ -82,7 +85,7 @@ body {
     padding: 0rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    background-color: $secondary-dark;
+    background-color: $primary-dark;
     line-height: 5rem;
 
     font-family: 'Open Sans', sans-serif;
@@ -165,6 +168,11 @@ body {
 }
 #imgAbout {
     z-index: -2;
+    background: url("../img/img_me.png") no-repeat center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
 }
 #imgCode {
     z-index: -3;
@@ -184,6 +192,11 @@ body {
 }
 #imgContact {
     z-index: -5;
+    background: url("../img/img_question.png") no-repeat center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
 }
 #imgStore {
     z-index: -6;
@@ -273,11 +286,29 @@ body {
     }
 }
 
-.shadow {
-    box-shadow: inset 0rem 0rem 15vw 0.4rem $shadow-color;
-    -webkit-box-shadow: inset 0rem 0rem 15vw 0.4rem $shadow-color;
-    -moz-box-shadow: inset 0rem 0rem 15vw 0.4rem $shadow-color;
-    -o-box-shadow: inset 0rem 0rem 15vw 0.4rem $shadow-color;
+.code-pic.shadow {
+    box-shadow: inset 0rem 0rem 5vw 1vw $shadow-color;
+    -webkit-box-shadow: inset 0rem 0rem 5vw 1vw $shadow-color;
+    -moz-box-shadow: inset 0rem 0rem 5vw 1vw $shadow-color;
+    -o-box-shadow: inset 0rem 0rem 5vw 1vw $shadow-color;
+}
+.art-box.shadow {
+    box-shadow: inset 0rem 0rem 8vw 1vw $shadow-color;
+    -webkit-box-shadow: inset 0rem 0rem 8vw 1vw $shadow-color;
+    -moz-box-shadow: inset 0rem 0rem 8vw 1vw $shadow-color;
+    -o-box-shadow: inset 0rem 0rem 8vw 1vw $shadow-color;
+}
+#menuoptions.shadow {
+    box-shadow: 0px 0px 4rem 1rem $menu-shadow-color;
+    -webkit-box-shadow: 0px 0px 4rem 1rem $menu-shadow-color;
+    -moz-box-shadow: 0px 0px 4rem 1rem $menu-shadow-color;
+    -o-box-shadow: 0px 0px 4rem 1rem $menu-shadow-color;
+}
+#logoBox.shadow {
+    box-shadow: 0px 0px 4rem 1rem $menu-shadow-color;
+    -webkit-box-shadow: 0px 0px 4rem 1rem $menu-shadow-color;
+    -moz-box-shadow: 0px 0px 4rem 1rem $menu-shadow-color;
+    -o-box-shadow: 0px 0px 4rem 1rem $menu-shadow-color;
 }
 
 .title-spacing {
@@ -378,7 +409,13 @@ body {
 #code-pweb {
 }
 #code-pweb-pic {
-    background: url("../img/img_pr_website.png") no-repeat center;
+    background: url("../img/code/pweb.jpg") no-repeat center;
+    background-size: cover;
+}
+#code-flyr {
+}
+#code-flyr-pic {
+    background: url("../img/code/flyr.jpg") no-repeat center;
     background-size: cover;
 }
 
@@ -411,7 +448,7 @@ body {
         width: 100%;
         height: 100%;
         position: absolute;
-        background-color: rgba(0,0,0,0.7);
+        background-color: rgba(0,0,0,0.8);
         opacity: 0;
         transition: all 0.5s ease-in-out;
         &:hover {
@@ -422,13 +459,14 @@ body {
     .art-box-text { 
         // All this shit to center it
         position: absolute;
-        top: 50%;
+        top: 45%;
         margin-top: -0.5em;
         overflow: hidden;
         white-space: nowrap;
         width: 100%;
         text-overflow: ellipsis;
         justify-content: center;
+        align-items: center;
 
         // Don't block the goddamn hover
         pointer-events: none;
@@ -440,6 +478,15 @@ body {
             text-align: center;
             letter-spacing: 0rem;
             color: $grad4;
+        }
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+            font-size: 1.6rem;
+            text-align: center;
+            letter-spacing: 0rem;
+            line-height: 4rem;
+            color: $primary-light;
         }
 
         // Hidden at first
@@ -474,6 +521,11 @@ body {
 }
 #rowContact {
     h4 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 1.6rem;
+        letter-spacing: normal;
+        text-align: right;
         color: $grad5;
     }
 }
