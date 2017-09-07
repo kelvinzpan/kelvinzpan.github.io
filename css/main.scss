@@ -393,8 +393,10 @@ body {
     transition: all 1s ease-in-out;
     margin-bottom: $header-line-bot-margin;
 }
-.code-pic {
-    min-height: 33vh !important;
+@media (max-width: 767px) {
+    .code-pic {
+        min-height: 33vh !important;
+    }
 }
 .code-txt {
     background: $secondary-dark;
