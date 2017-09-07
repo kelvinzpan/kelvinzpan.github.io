@@ -11,13 +11,13 @@ let grad5 = '#F7657B';
 let grad6 = '#F6416C';
 
 function showDiv(divName, opacity) {
-	let currDiv = document.getElementById(divName);
-	currDiv.style.visibility = 'visible';
-	currDiv.style.opacity = opacity;
+  let currDiv = document.getElementById(divName);
+  currDiv.style.visibility = 'visible';
+  currDiv.style.opacity = opacity;
 }
 
 function hideDiv(divName) {
-	let currDiv = document.getElementById(divName);
-	currDiv.style.visibility = 'hidden';
-	currDiv.style.opacity = '0';
+  let currDiv = document.getElementById(divName);
+  currDiv.style.visibility = 'hidden';
+  currDiv.style.opacity = '0';
 }
