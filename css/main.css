@@ -278,6 +278,9 @@ body {
   transition: all 1s ease-in-out;
   margin-bottom: 3rem; }
 
+.code-pic {
+  min-height: 33vh !important; }
+
 .code-txt {
   background: #333333;
   padding: 2rem !important; }
