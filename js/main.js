@@ -21,3 +21,8 @@ function hideDiv(divName) {
   currDiv.style.visibility = 'hidden';
   currDiv.style.opacity = '0';
 }
+
+// Copied jquery to collapse mobile menu on click
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});

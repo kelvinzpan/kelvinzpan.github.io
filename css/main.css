@@ -10,7 +10,6 @@ body {
   display: none; }
 
 #topNav {
-  padding: 0rem;
   padding-top: 1.5rem; }
 
 #logoBox {
@@ -42,6 +41,21 @@ body {
 @keyframes gradient {
   50% {
     background-position: 100% 0; } }
+#navHamMenu {
+  background-color: #333333;
+  height: 5rem;
+  width: 5rem;
+  padding: 0rem;
+  margin: 0rem; }
+
+#triangleDown {
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-top: 1.2rem solid #F9898A; }
+
 #menuoptions {
   border: solid 0.1rem #333333; }
 
