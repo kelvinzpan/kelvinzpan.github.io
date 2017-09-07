@@ -33,26 +33,26 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto shadow" id="menuoptions">
                     <li class="nav-item" id="navItem">
-                        <a class="nav-link" href="#about" id="navAbout" onmouseover="showDiv('imgAbout', 0.2)" onmouseleave="hideDiv('imgAbout')">
+                        <a class="nav-link" href="#about" id="navAbout">
                             <p>about</p>
                         </a>
                     </li>
                     <li class="nav-item" id="navItem">
-                        <a class="nav-link" href="#code" id="navCode" onmouseover="showDiv('imgCode', 0.2)" onmouseleave="hideDiv('imgCode')">
+                        <a class="nav-link" href="#code" id="navCode">
                             <p>code</p>
                         </a>
                     </li>
                     <li class="nav-item" id="navItem">
-                        <a class="nav-link" href="#art" id="navArt" onmouseover="showDiv('imgArt', 0.1)" onmouseleave="hideDiv('imgArt')">
+                        <a class="nav-link" href="#art" id="navArt">
                             <p>art</p>
                         </a>
                     </li>
                     <li class="nav-item" id="navItem">
-                        <a class="nav-link" href="#contact" id="navContact" onmouseover="showDiv('imgContact', 0.1)" onmouseleave="hideDiv('imgContact')">
+                        <a class="nav-link" href="#contact" id="navContact">
                             <p>contact</p>
                         </a>
                     </li>
-                    <li class="nav-item" id="navItem" onmouseover="showDiv('imgStore', 0.1)" onmouseleave="hideDiv('imgStore')">
+                    <li class="nav-item" id="navItem">
                         <a class="nav-link" id="navStore">
                             <!-- text in css -->
                         </a>
@@ -73,6 +73,7 @@
     <div class="banner-img" id="imgArt" style="visibility: hidden;"></div>
     <div class="banner-img" id="imgContact" style="visibility: hidden;"></div>
     <div class="banner-img" id="imgStore" style="visibility: hidden;"></div>
+
     <!-- About section -->
     <div class="container main-content" id="about">
         <div class="row" id="rowAboutHeader">
@@ -101,6 +102,7 @@
             </div>
         </div>
     </div>
+
     <!-- Code section -->
     <div class="container main-content" id="code">
         <div class="row" id="rowCodeHeader">
@@ -111,38 +113,43 @@
         </div>
         <div class="row" id="rowCodeLine"></div>
         <div class="row" id="rowCode">
-            <div class="col-md-12 code-box" id="code-pweb">
-                <div class="code-pic shadow" id="code-pweb-pic">
-                </div>
-                <div class="code-txt">
-                    <h3><b>madebyzi</b>, a personal website</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <div class="code-req-list">
-                        <div class="code-req">HTML5</div>
-                        <div class="code-req">CSS3</div>
-                        <div class="code-req">JavaScript</div>
-                        <div class="code-req">Bootstrap</div>
-                        <div class="code-req">SASS</div>
+            <div class="code-box" id="code-pweb">
+                <div class="row no-gutters">
+                    <div class="col-4 code-pic shadow" id="code-pweb-pic">
+                    </div>
+                    <div class="col-8 code-txt">
+                        <h3><b>madebyzi</b>, a personal website</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="code-req-list">
+                            <div class="code-req">HTML5</div>
+                            <div class="code-req">CSS3</div>
+                            <div class="code-req">JavaScript</div>
+                            <div class="code-req">Bootstrap</div>
+                            <div class="code-req">SASS</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-12 code-box" id="code-flyr">
-                <div class="code-pic shadow" id="code-flyr-pic">
-                </div>
-                <div class="code-txt">
-                    <h3><b>flyr</b>, an android app</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <div class="code-req-list">
-                        <div class="code-req">Scrum</div>
-                        <div class="code-req">Program Management</div>
-                        <div class="code-req">Prototyping</div>
-                        <div class="code-req">Design</div>
-                        <div class="code-req">Documentation</div>
+            <div class="code-box" id="code-flyr">
+                <div class="row no-gutters">
+                    <div class="col-4 code-pic shadow" id="code-flyr-pic">
+                    </div>
+                    <div class="col-8 code-txt">
+                        <h3><b>flyr</b>, an android app</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="code-req-list">
+                            <div class="code-req">Scrum</div>
+                            <div class="code-req">Program Management</div>
+                            <div class="code-req">Prototyping</div>
+                            <div class="code-req">Design</div>
+                            <div class="code-req">Documentation</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Art section -->
     <div class="container main-content" id="art">
         <div class="row" id="rowArtHeader">
@@ -168,8 +175,8 @@
         </div>
         <div class="row" id="gallery">
             <div class="col-md-4">
-                <div class="art-box shadow" id="skywardImg" onmouseover="showDiv('skyward', 1)" onmouseleave="hideDiv('skyward')">
-                    <div class="overlay"></div>
+                <div class="art-box shadow" id="skywardImg">
+                    <div class="overlay" id="skywardDim"></div>
                     <div class="art-box-text" id="skyward">
                         <h3>skyward</h3>
                         <p>a commission</p>
@@ -177,8 +184,8 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="art-box shadow" id="kannaImg" onmouseover="showDiv('kanna', 1)" onmouseleave="hideDiv('kanna')">
-                    <div class="overlay"></div>
+                <div class="art-box shadow" id="kannaImg">
+                    <div class="overlay" id="kannaDim"></div>
                     <div class="art-box-text" id="kanna">
                         <h3>kanna</h3>
                         <p>a birthday gift</p>
@@ -186,8 +193,8 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="art-box shadow" id="kanekireImg" onmouseover="showDiv('kanekire', 1)" onmouseleave="hideDiv('kanekire')">
-                    <div class="overlay"></div>
+                <div class="art-box shadow" id="kanekireImg">
+                    <div class="overlay" id="kanekireDim"></div>
                     <div class="art-box-text" id="kanekire">
                         <h3>kaneki :re</h3>
                         <p>a secret santa gift</p>
