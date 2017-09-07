@@ -9,6 +9,9 @@ body {
 ::-webkit-scrollbar {
   display: none; }
 
+* {
+  border-radius: 0 !important; }
+
 #topNav {
   padding-top: 1.5rem; }
 
