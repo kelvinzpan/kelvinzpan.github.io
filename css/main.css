@@ -4,7 +4,7 @@ html {
 
 body {
   background-color: #252525 !important;
-  font-size: 1.6rem; }
+  font-size: 2rem; }
 
 ::-webkit-scrollbar {
   display: none; }
@@ -27,7 +27,7 @@ body {
   padding: 0rem;
   border: 0rem;
   line-height: 5rem;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   letter-spacing: 0.7rem;
   font-family: 'Open Sans', sans-serif;
   color: #252525;
@@ -70,15 +70,15 @@ body {
   height: 5rem;
   margin: 0rem;
   padding: 0rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   background-color: #252525;
   line-height: 5rem;
   font-family: 'Open Sans', sans-serif;
   color: #ffffff;
   text-align: center;
   font-weight: 300;
-  font-size: 1.6rem;
+  font-size: 2rem;
   transition: all 0.5s ease-in-out; }
 
 #navAbout:hover {
@@ -177,19 +177,19 @@ body {
   align-items: center; }
   #welcome h1 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 4rem;
+    font-size: 6rem;
     letter-spacing: 0.7rem;
     text-align: center;
     background: linear-gradient(145deg, #FFF6B7, #F6416C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    line-height: 6rem;
+    line-height: 8.4rem;
     font-weight: 300; }
     #welcome h1 b {
       font-weight: 600; }
   #welcome h2 {
     font-family: 'Gentium Basic', serif;
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     letter-spacing: 0rem;
     text-align: center;
     color: #ffffff; }
@@ -198,7 +198,7 @@ body {
   color: #ffffff; }
   .main-content h3 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     letter-spacing: 0.5rem;
     text-align: center;
     font-weight: 300; }
@@ -207,25 +207,25 @@ body {
   .main-content h4 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.6rem; }
+    font-size: 2rem; }
   .main-content p {
     font-family: 'Gentium Basic', serif;
-    font-size: 1.6rem; }
+    font-size: 2rem; }
   .main-content a {
     display: inline-block;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 400; }
     .main-content a:link {
-      text-decoration: none;
+      text-decoration: underline;
       color: #ffffff; }
     .main-content a:visited {
-      text-decoration: none;
+      text-decoration: underline;
       color: #ffffff; }
     .main-content a:hover {
-      text-decoration: none;
+      text-decoration: underline;
       color: #FFF6B7; }
     .main-content a:active {
-      text-decoration: none;
+      text-decoration: underline;
       color: #FFF6B7; }
 
 .code-pic.shadow {
@@ -247,13 +247,13 @@ body {
   -o-box-shadow: 0px 0px 4rem 1rem #252525; }
 
 .title-spacing {
-  height: 6.5rem; }
+  height: 12rem; }
 
 #rowAboutHeader {
   color: #FDD1A8; }
 
 #rowAboutLine {
-  background: linear-gradient(90deg, #252525, #FFF6B7, #FDD1A8, #FBAD99, #252525);
+  background: linear-gradient(90deg, #FFF6B7, #FDD1A8, #FBAD99);
   height: 0.2rem;
   margin-top: 0.3rem;
   margin-bottom: 3rem; }
@@ -265,10 +265,9 @@ body {
   color: #FBAD99; }
 
 #rowCodeLine {
-  background: linear-gradient(90deg, #252525, #FDD1A8, #FBAD99, #F9898A, #252525);
+  background: linear-gradient(90deg, #FDD1A8, #FBAD99, #F9898A);
   height: 0.2rem;
-  margin-top: 0.3rem;
-  margin-bottom: 3rem; }
+  margin-top: 0.3rem; }
 
 #rowCode h4 {
   color: #FBAD99; }
@@ -276,7 +275,7 @@ body {
 .code-box {
   background: none;
   transition: all 1s ease-in-out;
-  margin-bottom: 3rem; }
+  margin-top: 3rem; }
 
 @media (max-width: 767px) {
   .code-pic {
@@ -287,9 +286,9 @@ body {
   .code-txt h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.8rem;
+    font-size: 2rem;
     letter-spacing: normal;
-    margin-bottom: 1.6rem;
+    margin-bottom: 2rem;
     text-align: left;
     color: #FBAD99; }
     .code-txt h3 b {
@@ -297,8 +296,8 @@ body {
   .code-txt p {
     font-family: 'Gentium Basic', serif;
     font-weight: 300;
-    font-size: 1.6rem;
-    margin-bottom: 1.6rem; }
+    font-size: 2rem;
+    margin-bottom: 2rem; }
     .code-txt p b {
       font-weight: 600; }
 
@@ -310,11 +309,19 @@ body {
   margin: 0.2rem;
   font-family: 'Gentium Basic', serif;
   font-weight: 300;
-  font-size: 1.6rem; }
+  font-size: 2rem; }
+
+#code-pweb {
+  padding-left: 15px;
+  padding-right: 15px; }
 
 #code-pweb-pic {
   background: url("../img/code/pweb.jpg") no-repeat center;
   background-size: cover; }
+
+#code-flyr {
+  padding-left: 15px;
+  padding-right: 15px; }
 
 #code-flyr-pic {
   background: url("../img/code/flyr.jpg") no-repeat center;
@@ -324,7 +331,7 @@ body {
   color: #F9898A; }
 
 #rowArtLine {
-  background: linear-gradient(90deg, #252525, #FBAD99, #F9898A, #F7657B, #252525);
+  background: linear-gradient(90deg, #FBAD99, #F9898A, #F7657B);
   height: 0.2rem;
   margin-top: 0.3rem;
   margin-bottom: 3rem; }
@@ -362,14 +369,14 @@ body {
     .art-box .art-box-text h3 {
       font-family: 'Open Sans', sans-serif;
       font-weight: 300;
-      font-size: 1.8rem;
+      font-size: 2rem;
       text-align: center;
       letter-spacing: 0rem;
       color: #F9898A; }
     .art-box .art-box-text p {
       font-family: 'Open Sans', sans-serif;
       font-weight: 300;
-      font-size: 1.6rem;
+      font-size: 2rem;
       text-align: center;
       letter-spacing: 0rem;
       line-height: 4rem;
@@ -391,7 +398,7 @@ body {
   color: #F7657B; }
 
 #rowContactLine {
-  background: linear-gradient(90deg, #252525, #F9898A, #F7657B, #F6416C, #252525);
+  background: linear-gradient(90deg, #F9898A, #F7657B, #F6416C);
   height: 0.2rem;
   margin-top: 0.3rem;
   margin-bottom: 3rem; }
@@ -399,7 +406,7 @@ body {
 #rowContact h4 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  font-size: 1.6rem;
+  font-size: 2rem;
   letter-spacing: normal;
   text-align: right;
   color: #F7657B; }
@@ -407,13 +414,13 @@ body {
 #jumboFooter {
   background-color: #333333;
   margin: 0rem;
-  margin-top: 6.5rem;
+  margin-top: 12rem;
   padding: 0rem; }
 
 #rowFooter h3 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  font-size: 1.6rem;
+  font-size: 2rem;
   letter-spacing: normal;
   margin-bottom: 1rem;
   text-align: right;
