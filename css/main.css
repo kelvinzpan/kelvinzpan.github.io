@@ -38,7 +38,7 @@ body {
   background-size: 180% 180%;
   transition: all 0.5s ease-in-out;
   animation: gradient 5s ease infinite; }
-  #logo b {
+  #logo bold {
     font-weight: 600; }
 
 @keyframes gradient {
@@ -185,7 +185,7 @@ body {
     -webkit-text-fill-color: transparent;
     line-height: 8.4rem;
     font-weight: 300; }
-    #welcome h1 b {
+    #welcome h1 bold {
       font-weight: 600; }
   #welcome h2 {
     font-family: 'Gentium Basic', serif;
@@ -202,7 +202,7 @@ body {
     letter-spacing: 0.5rem;
     text-align: center;
     font-weight: 300; }
-    .main-content h3 b {
+    .main-content h3 bold {
       font-weight: 600; }
   .main-content h4 {
     font-family: 'Open Sans', sans-serif;
@@ -214,7 +214,7 @@ body {
   .main-content a {
     display: inline-block;
     font-size: 2rem;
-    font-weight: 400; }
+    font-weight: 300; }
     .main-content a:link {
       text-decoration: underline;
       color: #ffffff; }
@@ -227,6 +227,8 @@ body {
     .main-content a:active {
       text-decoration: underline;
       color: #FFF6B7; }
+  .main-content bold {
+    font-weight: 600; }
 
 .code-pic.shadow {
   box-shadow: inset 0rem 0rem 5vw 1vw #202020;
@@ -275,7 +277,9 @@ body {
 .code-box {
   background: none;
   transition: all 1s ease-in-out;
-  margin-top: 3rem; }
+  margin-top: 3rem;
+  padding-left: 15px;
+  padding-right: 15px; }
 
 @media (max-width: 767px) {
   .code-pic {
@@ -291,14 +295,14 @@ body {
     margin-bottom: 2rem;
     text-align: left;
     color: #FBAD99; }
-    .code-txt h3 b {
+    .code-txt h3 bold {
       font-weight: 600; }
   .code-txt p {
     font-family: 'Gentium Basic', serif;
     font-weight: 300;
     font-size: 2rem;
     margin-bottom: 2rem; }
-    .code-txt p b {
+    .code-txt p bold {
       font-weight: 600; }
 
 .code-req {
@@ -311,17 +315,13 @@ body {
   font-weight: 300;
   font-size: 2rem; }
 
-#code-pweb {
-  padding-left: 15px;
-  padding-right: 15px; }
-
 #code-pweb-pic {
   background: url("../img/code/pweb.jpg") no-repeat center;
   background-size: cover; }
 
-#code-flyr {
-  padding-left: 15px;
-  padding-right: 15px; }
+#code-data-pic {
+  background: url() no-repeat center;
+  background-size: cover; }
 
 #code-flyr-pic {
   background: url("../img/code/flyr.jpg") no-repeat center;
