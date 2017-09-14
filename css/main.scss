@@ -289,7 +289,7 @@ body {
     h3 {
         font-family: 'Open Sans', sans-serif;
         font-size: $font-size-title;
-        letter-spacing: 0.5rem;
+        letter-spacing: $font-size-title/4;
         text-align: center;
 
         font-weight: 300;
@@ -413,7 +413,7 @@ body {
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
         font-size: $font-size-text;
-        letter-spacing: normal;
+        letter-spacing: 0rem;
         margin-bottom: $font-size-text;
         text-align: left;
         color: $grad3;
@@ -572,7 +572,7 @@ body {
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
         font-size: $font-size-text;
-        letter-spacing: normal;
+        letter-spacing: 0rem;
         text-align: right;
         color: $grad5;
     }
