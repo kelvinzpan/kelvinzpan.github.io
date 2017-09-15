@@ -265,7 +265,6 @@ body {
         background: linear-gradient(145deg, $grad1, $grad6);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        line-height: 3.5 * $font-size-title;
 
         font-weight: 300;
         bold {
@@ -456,7 +455,7 @@ body {
 }
 
 #code-data-pic {
-    background: url() no-repeat center;
+    background: url("../img/code/placeholder.png") no-repeat center;
     background-size: cover;
 }
 #code-flyr {

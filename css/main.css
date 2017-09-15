@@ -183,7 +183,6 @@ body {
     background: linear-gradient(145deg, #FFF6B7, #F6416C);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    line-height: 8.4rem;
     font-weight: 300; }
     #welcome h1 bold {
       font-weight: 600; }
@@ -320,7 +319,7 @@ body {
   background-size: cover; }
 
 #code-data-pic {
-  background: url() no-repeat center;
+  background: url("../img/code/placeholder.png") no-repeat center;
   background-size: cover; }
 
 #code-flyr-pic {
