@@ -40,13 +40,19 @@ body {
 
 // NAVBAR ---------------------------------------------------------------------
 #topNav {
-    padding-top: 1.5rem;
+    padding: 1.5rem !important;
+}
+#topNavContain {
+    margin: 0rem;
+    padding: 0rem;
+    width: 100%;
 }
 
 #logoBox {
     margin: 0rem;
     padding: 0rem;
     border: 0rem;
+    float: left;
 }
 
 #logo {
@@ -68,9 +74,7 @@ body {
     text-align: center;
 
     outline: none;
-    background: linear-gradient(145deg,
-    $grad1,
-    $grad6);
+    background: linear-gradient(145deg,$grad1,$grad6);
     background-size: 180% 180%;
     transition: all 0.5s ease-in-out;
     animation: gradient 5s ease infinite;
@@ -84,6 +88,7 @@ body {
 
 #navbarSupportedContent {
     //background: $secondary-dark;
+    float: right;
 }
 
 #navHamMenu {
@@ -92,6 +97,7 @@ body {
     width: 5rem;
     padding: 0rem;
     margin: 0rem;
+    float: right;
 }
 #triangleDown {
     margin: 0 auto;
