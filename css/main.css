@@ -344,6 +344,10 @@ body {
   background: url("../img/code/pestcontrol.jpg") no-repeat center;
   background-size: cover; }
 
+#code-readytowork-pic {
+  background: url("../img/code/readytowork.jpg") no-repeat center;
+  background-size: cover; }
+
 #rowArtHeader {
   color: #F9898A; }
 
