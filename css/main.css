@@ -324,6 +324,10 @@ body {
   font-weight: 300;
   font-size: 2rem; }
 
+#code-zephyr-pic {
+  background: url("../img/code/zephyr.jpg") no-repeat center;
+  background-size: cover; }
+
 #code-pweb-pic {
   background: url("../img/code/pweb.jpg") no-repeat center;
   background-size: cover; }
