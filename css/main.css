@@ -324,6 +324,14 @@ body {
   font-weight: 300;
   font-size: 2rem; }
 
+#code-bearpong-pic {
+  background: url("../img/code/bearpong.jpg") no-repeat center;
+  background-size: cover; }
+
+#code-strongholds-pic {
+  background: url("../img/code/strongholds.jpg") no-repeat center;
+  background-size: cover; }
+
 #code-zephyr-pic {
   background: url("../img/code/zephyr.jpg") no-repeat center;
   background-size: cover; }

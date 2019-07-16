@@ -63,12 +63,6 @@
                             <p>contact</p>
                         </a>
                     </li>
-                    <!-- Commented out test
-                    <li class="nav-item">
-                        <a class="nav-link" id="navStore">
-                        </a>
-                    </li>
-                    -->
                 </ul>
             </div>
         </div>
@@ -77,8 +71,8 @@
     <!-- Background div -->
     <div id="welcome">
         <div>
-            <h1>nice to meet you</h1><br>
-            <h2>Hi. My name is Kelvin.</h2>
+            <h1>kelvin pan</h1><br>
+            <h2>developer, artist, and gamer</h2>
         </div>
     </div>
     <!-- Main banner background images, ensure default hidden -->
@@ -87,7 +81,6 @@
     <div class="banner-img" id="imgCode" style="visibility: hidden;"></div>
     <div class="banner-img" id="imgArt" style="visibility: hidden;"></div>
     <div class="banner-img" id="imgContact" style="visibility: hidden;"></div>
-    <!--<div class="banner-img" id="imgStore" style="visibility: hidden;"></div>-->
 
     <!-- About section -->
     <div class="container main-content" id="about">
@@ -99,24 +92,24 @@
         </div>
         <div class="row" id="rowAboutLine"></div>
         <div class="row" id="rowAbout">
-            <div class="col-md-8">
-                <p>My name is actually Zi Long, but I go by Kelvin. I am a full-time student studying computer science. When I'm not coding, I like to draw, cook, shop for clothes, and play video games (now playing League of Legends, God of War, and Nier: Automata).</p>
-                <p>I'm currently finding my niche within the realm of software development. I'm interested in video games and full stack web development, and plan to work on a Unity or Godot project soon. </p>
-                <p><bold>I am proficient in:</bold> Java, C++, HTML/CSS, JavaScript, and Python.</p>
-            </div>
             <!-- Left side is smaller column -->
-            <div class="col-md-4" style="text-align: right;">
+            <div class="col-md-4">
                 <h4>education:</h4>
-                <p>University of California, San Diego</p>
-                <h4>major:</h4>
-                <p>Computer Science (B.S.)</p>
-                <h4>minor:</h4>
-                <p>Cognitive Science<br>
-                <h4>based:</h4>
-                <p>San Francisco / San Diego</p>
+                <p>University of California, San Diego<br>
+                <bold>Major:</bold> Computer Science, B.S.<br>
+                <bold>Minor:</bold> Cognitive Science</p>
                 <h4>work exp:</h4>
                 <p>Blizzard Entertainment<br>
-                Amazon</p>
+                Amazon<br>
+                Riot Games</p>
+                <h4>last updated:</h4>
+                <p>July 2019</p>
+            </div>
+            <div class="col-md-8">
+                <p>My name is actually Zi Long, but I go by Kelvin. I am a full-time student studying computer science. My interests other than code include drawing, cooking, fashion, and video games.</p>
+                <p>I'm currently finding my niche within the realm of software development. I'm interested in full stack web development and making games.</p>
+                <p><bold>My favorite games include:</bold> League of Legends, Counter-Strike: Global Offensive, Persona 5, God of War</p>
+                <p><bold>I am proficient in:</bold> Java, C++, HTML/CSS, JavaScript, and Python.</p>
             </div>
         </div>
     </div>
@@ -131,13 +124,44 @@
         </div>
         <div class="row" id="rowCodeLine"></div>
         <div class="row" id="rowCode">
+        	<div class="code-box" id="code-bearpong">
+                <div class="row no-gutters">
+                    <div class="col-md-4 col-sm-12 code-pic shadow" id="code-bearpong-pic">
+                    </div>
+                    <div class="col-md-8 col-sm-12 code-txt">
+                        <h3><bold>bear pong</bold>, a multiplayer game</h3>
+                        <p>Bear Pong is a 3D multiplayer video game written from scratch in C++ by a team of six. It plays like Rocket League, except the players are bears, it's themed after ping pong, and there are projectiles and explosions. More information and source code are located on this <a href="https://github.com/ucsd-cse-125-spring-2019/cse125-sp19-group5">GitHub repo</a>. Unfortunately, the live stream of our presentation was not saved. Hopefully it will be uploaded to YouTube within the next year.</p>
+                        <div class="code-req-list">
+                            <div class="code-req">C++</div>
+                            <div class="code-req">OpenGL</div>
+                            <div class="code-req">GLFW</div>
+                            <div class="code-req">Boost</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        	<div class="code-box" id="code-strongholds">
+                <div class="row no-gutters">
+                    <div class="col-md-4 col-sm-12 code-pic shadow" id="code-strongholds-pic">
+                    </div>
+                    <div class="col-md-8 col-sm-12 code-txt">
+                        <h3><bold>spherical strongholds</bold>, a vr unity game</h3>
+                        <p>Spherical Strongholds is a basic VR real-time strategy game built in Unity with another teammate. More information and source code are located on this <a href="https://github.com/kelvinzpan/CSE165_Final">GitHub repo</a>. For a quick peek, check out our <a href="https://www.youtube.com/watch?v=GAVEdOknCGo&feature=youtu.be">presentation video</a>.</p>
+                        <div class="code-req-list">
+                            <div class="code-req">Unity</div>
+                            <div class="code-req">C#</div>
+                            <div class="code-req">Vive API</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         	<div class="code-box" id="code-zephyr">
                 <div class="row no-gutters">
                     <div class="col-md-4 col-sm-12 code-pic shadow" id="code-zephyr-pic">
                     </div>
                     <div class="col-md-8 col-sm-12 code-txt">
                         <h3><bold>zephyr</bold>, a web app</h3>
-                        <p>Zephyr is a web app that suggests League of Legends runes and builds on the fly. This was a school project to teach myself React. More information and source code are located on this <a href="https://github.com/tianmubian/Cogs-121-lolbuilds">GitHub repo</a>. For a quick peek, check out our <a href="https://www.youtube.com/watch?v=JwPsdWJVPuQ&feature=youtu.be">presentation video</a>.
+                        <p>Zephyr is a web app that suggests League of Legends runes and builds on the fly. This was a school project to teach myself React. More information and source code are located on this <a href="https://github.com/tianmubian/Cogs-121-lolbuilds">GitHub repo</a>. For a quick peek, check out our <a href="https://www.youtube.com/watch?v=JwPsdWJVPuQ&feature=youtu.be">presentation video</a>.</p>
                         <div class="code-req-list">
                             <div class="code-req">React</div>
                             <div class="code-req">CSS/Sass</div>
@@ -175,11 +199,11 @@
                             <div class="code-req">OpenGL</div>
                             <div class="code-req">GLFW</div>
                             <div class="code-req">Visual Studio</div>
-                            <div class="code-req">Paired Programming</div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- RETIRED 
         	<div class="code-box" id="code-finalbattle">
                 <div class="row no-gutters">
                     <div class="col-md-4 col-sm-12 code-pic shadow" id="code-finalbattle-pic">
@@ -211,7 +235,7 @@
                     </div>
                 </div>
             </div>
-            <!-- REMOVED DATA SECTION BC ITS WEAK <div class="code-box" id="code-data">
+            <div class="code-box" id="code-data">
                 <div class="row no-gutters">
                     <div class="col-md-4 col-sm-12 code-pic shadow" id="code-data-pic">
                     </div>
@@ -227,7 +251,7 @@
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
             <div class="code-box" id="code-flyr">
                 <div class="row no-gutters">
                     <div class="col-md-4 col-sm-12 code-pic shadow" id="code-flyr-pic">
@@ -244,6 +268,7 @@
                     </div>
                 </div>
             </div>
+            END OF RETIRED -->
         </div>
     </div>
 
@@ -259,7 +284,7 @@
         <div class="row" id="rowArt">
             <div class="col-md-8">
                 <p>I like to draw when I need a break from code (and when I have the time). I mainly use thin-tip markers, such as Sakura Pigma Microns, and Copic markers on cardstock. I'm also teaching myself digital illustration, using Adobe Photoshop with a Wacom Intuos 4. Check out my Instagram for all of my sketches and art pieces, which I've linked.
-                    <br><br>Meanwhile, check out some of my work below:</p>
+                    <br><br>Select pieces of my work are below:</p>
             </div>
             <!-- Left side is smaller column -->
             <div class="col-md-4" style="text-align: right;">
@@ -267,8 +292,6 @@
                 <a href="https://www.instagram.com/_kelvinpan/">
                     <p>@_kelvinpan</p>
                 </a>
-                <h4>artstation:</h4>
-                <p>Coming soon...?</p>
             </div>
         </div>
         <div class="row" id="gallery">
@@ -317,7 +340,7 @@
                 <p>
                     <bold>Have a message?</bold>
                     <br>Contact me at <a href="mailto:kelvin.z.pan@gmail.com">kelvin.z.pan@gmail.com</a>.<br>
-                    <br>Please visit my LinkedIn and GitHub pages for more work background. I'm also involved in Triton Gaming, a gaming student organization at UC San Diego. Check out the Facebook page link to learn more!</p>
+                    <br>Please visit my LinkedIn and GitHub pages, or check out my resume for more work background.</p>
             </div>
             <!-- Left side is smaller column -->
             <div class="col-md-4" style="text-align: right;">
@@ -329,9 +352,9 @@
                 <a href="https://github.com/kelvinzpan">
                     <p>kelvinzpan</p>
                 </a>
-                <h4>triton gaming facebook:</h4>
-                <a href="https://www.facebook.com/tritonesports">
-                    <p>tritonesports</p>
+                <h4>resume:</h4>
+                <a href="https://github.com/kelvinzpan/kelvinzpan.github.io/blob/master/res/Resume.pdf">
+                    <p>pdf</p>
                 </a>
             </div>
         </div>
